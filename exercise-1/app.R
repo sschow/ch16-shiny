@@ -10,7 +10,7 @@ ui <- fluidPage(
   p("Definitely" , strong("very much excited"), "to start making apps"),
   img("", src="https://media2.giphy.com/media/l3q2Ip7FrmPE33EiI/giphy.gif"),
   p("let's get down to business...to work with these", em("sliders")),
-  sliderInput("the slider", label = h3("the slider is alive!"), min = 10, 
+  sliderInput("slider", label = h3("the slider is alive!"), min = 10, 
               max = 100, value = 50)
 )
 
