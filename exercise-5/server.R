@@ -21,5 +21,8 @@ shinyServer(function(input, output) {
       return(build_map(joined_data, input$mapvar))
   }) 
   
+  output$plot <- renderPlotly({
+      return(build_scatter(joined_data, search = input$search))
+  })
  
 })
